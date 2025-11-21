@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
-	console.log("Play Video - volume: " + (video.volume * 100).toFixed(0) + "%");
+	console.log("Play Video - volume: " + Math.round((video.volume * 100).toFixed(0)) + "%");
 });
 
 document.querySelector("#pause").addEventListener("click", function() {
