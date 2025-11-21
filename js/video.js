@@ -9,6 +9,7 @@ window.addEventListener("load", function() {
 
 document.querySelector("#play").addEventListener("click", function() {
 	video.play();
+	document.querySelector("#volume").innerHTML = document.querySelector("#slider").value + "%";
 	console.log("Play Video - volume: " +(video.volume * 100).toFixed(0) + "%");
 });
 
